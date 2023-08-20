@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>registration form</title>
+<link rel="stylesheet" href="style_registration.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>Registration Form</header>
+        <br>
+        <hr>
+        <form action="#" class="form" id="EmployeeReg">
+
+        <div class="input-box">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter full name" required id="name">
+        </div>
+
+        <div class="column">
+            <div class="input-box">
+                <label>Age</label>
+                <input type="text" placeholder="age" required id="age"> 
+            </div>
+            <div class="input-box">
+                <label>Pincode</label>
+                <input type="text" placeholder="pincode" required id="pincode">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="input-box" >
+                <label>Gender:</label>
+                <select required id="gender">
+                    <option value="-">-</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label>Date of Birth</label>
+                <input type="date" placeholder="dd-mm-yyyy" required id="dob">
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="input-box">
+                <label>Phone number</label>
+                <input type="text" placeholder="10-digit" required minlength="10" id="phnum">
+            </div>
+            <div class="input-box">
+                <label>Alternative phone number</label>
+                <input type="text" placeholder="10-digit" required minlength="10" id="altphnum">
+            </div>
+        </div>
+        <div class="column">
+            <div class="input-box" >
+                <label>Mobile type</label>
+                <select required id="mobileType">
+                    <option value="-">-</option>
+                    <option value="Featured phone">Featured phone</option>
+                    <option value="Smart phone">Smart phone</option>
+                </select>
+            </div>
+            <div class="input-box" >
+                <label>Languages knopwn</label>
+                <select required id="langKnown">
+                    <option value="-">-</option>
+                    <option value="Tamil" >Tamil</option>
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Telugu">Telugu</option>
+                    <option value="Malayalam">Malayalam</option>
+                    <option value="Kannada">Kannada</option>
+                    <option value="others">others</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-box">
+            <label>Aadhar number</label>
+            <input type="text" placeholder="12-digit" required minlength="12" id="aadhar">
+        </div>
+        <div class="input-box">
+            <label>Residential address</label>
+            <textarea rows="5" cols="90" placeholder="Enter full address" id="resAdd"></textarea>
+        </div>
+        <div class="column">
+            <div class="input-box" >
+                <label>Labour skill 1</label>
+                <select required id="skill1">
+                    <option value="-">-</option>
+                    <option value="Construction labour">Construction labour</option>
+                    <option value="Agricultural labour">Agricultural labour</option>
+                    <option value="Mechanic">Mechanic</option>
+                    <option value="Electrician">Electrician</option>
+                    <option value="Mason">Mason</option>
+                    <option value="Painter">Painter</option>
+                    <option value="Plumber">Plumber</option>
+                    <option value="others">others</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label>Expected minimum wage 1</label>
+                <input type="text" placeholder="minimum wage" id="wage1">
+            </div>
+        </div>
+        <div class="column">
+            <div class="input-box" >
+                <label>Labour skill 2</label>
+                <select required id="skill2">
+                    <option value="-">-</option>
+                    <option value="Construction labour">Construction labour</option>
+                    <option value="Agricultural labour">Agricultural labour</option>
+                    <option value="Mechanic">Mechanic</option>
+                    <option value="Electrician">Electrician</option>
+                    <option value="Mason">Mason</option>
+                    <option value="Painter">Painter</option>
+                    <option value="Plumber">Plumber</option>
+                    <option value="others">others</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label>Expected minimum wage 2</label>
+                <input type="text" placeholder="minimum wage" id="wage2">
+            </div>
+        </div>
+        <div class="column">
+            <div class="input-box" >
+                <label>Labour skill 3</label>
+                <select required id="skill3">
+                    <option value="-">-</option>
+                    <option value="Construction labour">Construction labour</option>
+                    <option value="Agricultural labour">Agricultural labour</option>
+                    <option value="Mechanic">Mechanic</option>
+                    <option value="Electrician">Electrician</option>
+                    <option value="Mason">Mason</option>
+                    <option value="Painter">Painter</option>
+                    <option value="Plumber">Plumber</option>
+                    <option value="others">others</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label>Expected minimum wage 3</label>
+                <input type="text" placeholder="minimum wage" id="wage3">
+            </div>
+        </div>
+        <br><br>
+        <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./mail.js"></script>
+</body>
+</html>

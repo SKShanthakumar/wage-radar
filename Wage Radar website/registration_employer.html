@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>registration form</title>
+<link rel="stylesheet" href="style_registration.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>Registration Form</header>
+        <br>
+        <hr>
+        <form action="#" class="form">
+
+        <div class="input-box">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter full name" required/>
+        </div>
+
+        <div class="column">
+            <div class="input-box">
+                <label>Age</label>
+                <input type="text" placeholder="age" required> 
+            </div>
+            <div class="input-box">
+                <label>Pincode</label>
+                <input type="text" placeholder="pincode" required>
+            </div>
+        </div>
+        <div class="column">
+            <div class="input-box" >
+                <label>Gender:</label>
+                <select required>
+                    <option value="-">-</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label>Date of Birth</label>
+                <input type="date" placeholder="dd-mm-yyyy" required>
+            </div>
+        </div>
+        <div class="column">
+            <div class="input-box">
+                <label>Phone number</label>
+                <input type="text" placeholder="10-digit" required minlength="10">
+            </div>
+            <div class="input-box">
+                <label>Alternative phone number</label>
+                <input type="text" placeholder="10-digit" required minlength="10">
+            </div>
+        </div>
+        <div class="input-box">
+            <label>Residential address</label>
+            <textarea rows="5" cols="90" placeholder="Enter full address"></textarea>
+        </div>
+        <div class="input-box" >
+            <label>Profession</label>
+            <select required>
+                <option value="-">-</option>
+                <option value="Construction labour">Construction labour</option>
+                <option value="Agricultural labour">Agricultural labour</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Electrical">Electrical</option>
+                <option value="Masonry">Masonry</option>
+                <option value="Painting">Painting</option>
+                <option value="Plumbing">Plumbing</option>
+                <option value="others">others</option>
+            </select>
+        </div>
+        <br><br>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+</body>
+</html>

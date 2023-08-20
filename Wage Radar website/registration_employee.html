@@ -13,7 +13,7 @@
         <header>Registration Form</header>
         <br>
         <hr>
-        <form action="#" class="form" id="EmployeeReg">
+        <form action="#" class="form" id="WgRdrEmployeeReg">
 
         <div class="input-box">
             <label>Full Name</label>
@@ -50,25 +50,25 @@
         <div class="column">
             <div class="input-box">
                 <label>Phone number</label>
-                <input type="text" placeholder="10-digit" required minlength="10" id="phnum">
+                <input type="text" placeholder="10-digit" required minlength="10" id="phno">
             </div>
             <div class="input-box">
                 <label>Alternative phone number</label>
-                <input type="text" placeholder="10-digit" required minlength="10" id="altphnum">
+                <input type="text" placeholder="10-digit" required minlength="10" id="altphno">
             </div>
         </div>
         <div class="column">
             <div class="input-box" >
                 <label>Mobile type</label>
-                <select required id="mobileType">
+                <select required id="mobiletype">
                     <option value="-">-</option>
                     <option value="Featured phone">Featured phone</option>
                     <option value="Smart phone">Smart phone</option>
                 </select>
             </div>
             <div class="input-box" >
-                <label>Languages knopwn</label>
-                <select required id="langKnown">
+                <label>Languages known</label>
+                <select required id="language">
                     <option value="-">-</option>
                     <option value="Tamil" >Tamil</option>
                     <option value="English">English</option>
@@ -86,7 +86,7 @@
         </div>
         <div class="input-box">
             <label>Residential address</label>
-            <textarea rows="5" cols="90" placeholder="Enter full address" id="resAdd"></textarea>
+            <textarea rows="5" cols="90" placeholder="Enter full address" id="resadd"></textarea>
         </div>
         <div class="column">
             <div class="input-box" >
@@ -153,6 +153,6 @@
         </form>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-    <script src="./mail.js"></script>
+    <script src="./registration_employee.js"></script>
 </body>
 </html>

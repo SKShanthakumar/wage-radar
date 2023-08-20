@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../karthi"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Wage Radar website"
+	}
+}

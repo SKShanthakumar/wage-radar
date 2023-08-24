@@ -12,14 +12,14 @@ def send_sms():
     payload = request.json
 
     # Your Twilio Account SID and Auth Token
-    account_sid = 'ACbfed5e8cfa3c3732250bfdd553a3508b'
-    auth_token = '17e264c513e1435d7ee73ace2d63f594'
+    account_sid = 'ACd24869f924a2e9ce0bfc2d6e5bf5e9f5'
+    auth_token = '782d49f87bf9f7bb718cd9fe55237a81'
     client = Client(account_sid, auth_token)
 
     try:
         client.messages.create(
             body=payload['message'],
-            from_='+12184534837',
+            from_='+12518423142',
             to=payload['phoneNumber']
         )
         response = {'success': True, 'message': 'SMS sent successfully'}

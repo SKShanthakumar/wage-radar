@@ -19,19 +19,19 @@
                 <select required id="profession">
                     <option value="-">-</option>
                     <option value="Construction labour
-                    wage: 800">Construction labour</option>
+                    Wage: 800">Construction labour</option>
                     <option value="Agricultural labour
-                    wage: 600">Agricultural labour</option>
+                    Wage: 600">Agricultural labour</option>
                     <option value="Mechanical
-                    wage: 700">Mechanical labour</option>
+                    Wage: 700">Mechanical labour</option>
                     <option value="Electrical
-                    wage: 800">Electrical</option>
+                    Wage: 800">Electrical</option>
                     <option value="Masonry
-                    wage: 800">Masonry</option>
+                    Wage: 800">Masonry</option>
                     <option value="Painting
-                    wage: 700">Painting</option>
+                    Wage: 700">Painting</option>
                     <option value="Plumbing
-                    wage: 600">Plumbing</option>
+                    Wage: 600">Plumbing</option>
                     <option value="others">others</option>
                 </select>
             </div>
@@ -129,7 +129,7 @@
         </form>
     </div>
     <script>
-        const pph='+917904593204';
+        const ph='+917904593204'
         function sendSMS() {
             const profession = document.getElementById('profession').value;
             const district = document.getElementById('district').value;
@@ -176,7 +176,7 @@
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    phoneNumber: pph,
+                    phoneNumber: ph,
                     message: message
                 })
             })

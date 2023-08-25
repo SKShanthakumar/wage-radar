@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>edit your details</title>
+    <link rel="stylesheet" href="style_registration.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>Enter your new details</header>
+        <br>
+        <hr>
+        <form action="#" class="form"
+         id="WgRdrEmployeeReg">
+
+        <div class="input-box">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter full name" required id="name">
+        </div>
+
+        <div class="column">
+            <div class="input-box">
+                <label>Age</label>
+                <input type="text" placeholder="age" required id="age"> 
+            </div>
+            <div class="input-box">
+                <label>Pincode</label>
+                <input type="text" placeholder="pincode" required id="pincode">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="input-box" >
+                <label>Gender:</label>
+                <select required id="gender">
+                    <option value="-">-</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label>Date of Birth</label>
+                <input type="date" placeholder="dd-mm-yyyy" required id="dob">
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="input-box">
+                <label>Phone number</label>
+                <input type="text" placeholder="10-digit" required minlength="10" id="phno">
+            </div>
+            <div class="input-box">
+                <label>Alternative phone number</label>
+                <input type="text" placeholder="10-digit" required minlength="10" id="altphno">
+            </div>
+        </div>
+        <div class="column">
+            <div class="input-box" >
+                <label>Mobile type</label>
+                <select required id="mobiletype">
+                    <option value="-">-</option>
+                    <option value="Featured phone">Featured phone</option>
+                    <option value="Smart phone">Smart phone</option>
+                </select>
+            </div>
+            <div class="input-box" >
+                <label>Languages known</label>
+                <select required id="language">
+                    <option value="-">-</option>
+                    <option value="Tamil" >Tamil</option>
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Telugu">Telugu</option>
+                    <option value="Malayalam">Malayalam</option>
+                    <option value="Kannada">Kannada</option>
+                    <option value="others">others</option>
+                </select>
+            </div>
+        </div>
+        <div class="column">
+            <div class="input-box">
+                <label>Email</label>
+                <input type="text" placeholder="example@ex.com" id="email">
+            </div>
+            <div class="input-box">
+                <label>Password</label>
+                <input type="text" placeholder="Enter password for your account" id="password">
+            </div>
+        </div>
+        <div class="input-box">
+            <label>Aadhar number</label>
+            <input type="text" placeholder="12-digit" required minlength="12" id="aadhar">
+        </div>
+        <div class="input-box">
+            <label>Residential address</label>
+            <textarea rows="5" cols="90" placeholder="Enter full address" id="resadd"></textarea>
+        </div>
+        <div class="column">
+            <div class="input-box" >
+                <label>Labour skill 1</label>
+                <select required id="skill1">
+                    <option value="-">-</option>
+                    <option value="Construction labour">Construction labour</option>
+                    <option value="Agricultural labour">Agricultural labour</option>
+                    <option value="Mechanic">Mechanic</option>
+                    <option value="Electrician">Electrician</option>
+                    <option value="Mason">Mason</option>
+                    <option value="Painter">Painter</option>
+                    <option value="Plumber">Plumber</option>
+                    <option value="others">others</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label>Expected minimum wage 1</label>
+                <input type="text" placeholder="minimum wage" id="wage1">
+            </div>
+        </div>
+        <div class="column">
+            <div class="input-box" >
+                <label>Labour skill 2</label>
+                <select required id="skill2">
+                    <option value="-">-</option>
+                    <option value="Construction labour">Construction labour</option>
+                    <option value="Agricultural labour">Agricultural labour</option>
+                    <option value="Mechanic">Mechanic</option>
+                    <option value="Electrician">Electrician</option>
+                    <option value="Mason">Mason</option>
+                    <option value="Painter">Painter</option>
+                    <option value="Plumber">Plumber</option>
+                    <option value="others">others</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label>Expected minimum wage 2</label>
+                <input type="text" placeholder="minimum wage" id="wage2">
+            </div>
+        </div>
+        <div class="column">
+            <div class="input-box" >
+                <label>Labour skill 3</label>
+                <select required id="skill3">
+                    <option value="-">-</option>
+                    <option value="Construction labour">Construction labour</option>
+                    <option value="Agricultural labour">Agricultural labour</option>
+                    <option value="Mechanic">Mechanic</option>
+                    <option value="Electrician">Electrician</option>
+                    <option value="Mason">Mason</option>
+                    <option value="Painter">Painter</option>
+                    <option value="Plumber">Plumber</option>
+                    <option value="others">others</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label>Expected minimum wage 3</label>
+                <input type="text" placeholder="minimum wage" id="wage3">
+            </div>
+        </div>
+        <br><br>
+        <button type="submit" class="btn" id="register">Confirm</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="edit_employee.js"></script>
+</body>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+    
+    const firebaseConfig = {
+        apiKey: "AIzaSyDBO9IseP8r8Z_9RbGK4v7RqafavEGAgE8",
+        authDomain: "wage-radar.firebaseapp.com",
+        databaseURL: "https://wage-radar-default-rtdb.firebaseio.com",
+        projectId: "wage-radar",
+        storageBucket: "wage-radar.appspot.com",
+        messagingSenderId: "1088633229326",
+        appId: "1:1088633229326:web:e7b062d7dbf0cbaf026c5f"
+    };
+
+const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const auth = getAuth();
+    console.log(app);
+ 
+    document.getElementById("register").addEventListener("click", function() {
+        var email =  document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        
+        createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+           
+          const user = userCredential.user;
+          console.log(user);
+          alert("Edited successfull!!");
+          
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          console.log(errorMessage);
+          alert(error);
+        });		  		  
+    });
+  </script>
+</html>

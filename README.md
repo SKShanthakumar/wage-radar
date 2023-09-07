@@ -17,3 +17,5 @@ Wage Radar is a project aimed at connecting daily wage workers with job opportun
 
 - **User Preferences:**
   - Users can set job preferences to receive relevant notifications.
+
+This is a prototype of the project.
